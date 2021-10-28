@@ -1,0 +1,26 @@
+body{
+    font: size 16px;; 
+ }
+
+ h1 {
+     font-family: sans-serif,helvetica;    
+     font-size: 65px;
+     color: orange
+ }
+
+ p{
+     font-weight: 600;
+     font-size: 3em;
+ }
+
+ li{
+     font-style: italic;
+     line-height: 60px;
+     text-align: center;
+     text-decoration: underline;
+     font-size: 2em;
+ }
+
+ #a {background-color: yellow;}
+ #v {background-color: red;} 
+ #m {background-color: brown;}
