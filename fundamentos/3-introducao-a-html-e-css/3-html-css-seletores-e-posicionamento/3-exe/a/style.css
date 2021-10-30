@@ -1,0 +1,16 @@
+h1, p{
+    text-align: center;     
+}
+li{
+    font-family: arial;
+}
+li:hover{
+    background-color: yellowgreen;
+}
+li:active{
+    font-family: 'Times New Roman', Times, serif;
+    color: red;
+}    
+ol, ul {
+    list-style: none;
+}   
