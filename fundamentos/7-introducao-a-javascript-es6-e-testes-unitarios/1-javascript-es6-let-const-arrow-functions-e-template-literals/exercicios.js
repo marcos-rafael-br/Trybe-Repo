@@ -83,14 +83,18 @@ console.log(factorial(5)); */
 
 const frase = 'Eu tenho a forçaaaaa';
 
-const separar = frase.split(' ');
-let maxLength = 0;
-let result = '';
+const bigWord = (frase) => {
+  const separar = frase.split(' ');
+  let maxLength = 0;
+  let result = '';
 
-for (let i = 0; i < separar.length; i++) {
-  if (separar[i].length > maxLength) {
-    maxLength = separar[i].length;
-    result = separar[i];
+  for (let i = 0; i < separar.length; i++) {
+    if (separar[i].length > maxLength) {
+      maxLength = separar[i].length;
+      result = separar[i];
+    }
   }
-}
-console.log(result);
+  return result;
+};
+
+console.log(bigWord(frase));
