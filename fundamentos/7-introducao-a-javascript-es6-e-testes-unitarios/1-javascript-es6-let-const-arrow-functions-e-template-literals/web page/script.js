@@ -11,7 +11,7 @@ button.addEventListener('click', contador);
 
 const array = ['Android', 'iOS', 'Architecture', 'Teach', 'Run'];
 
-const searchX = (string, nome) => {
+/* const searchX = (string, nome) => {
   const position = string.replace('x', nome);
   return position;
 };
@@ -23,4 +23,32 @@ const concat = (f) => {
   return a;
 };
 
-console.log(concat(searchX(frase, 'Rafael')));
+console.log(concat(searchX(frase, 'Rafael'))); */
+
+function deFora(nome) {
+  const deDentro = (valor) => `Tryber ${valor} aqui! 
+  
+  Tudo bem?`;
+
+  let result = `${deDentro(nome)}
+  
+  Minhas cinco principais habilidades são:`;
+
+  newArray = array.sort();
+
+  newArray.forEach(
+    (skill) =>
+      (result = `${result}
+  
+  - ${skill}`)
+  );
+
+  result = `  ${result}
+
+    #goTrybe
+    `;
+
+  return result;
+}
+
+console.log(deFora('Rafael'));
