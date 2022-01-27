@@ -18,6 +18,7 @@ class App extends React.Component {
     this.setState((estadoAnterior, _props) => ({
       numeroDeCliques: estadoAnterior.numeroDeCliques + 1,
     }));
+    console.log(`Botão 1 ${this.getButtonColor(this.state.numeroDeCliques)}`);
   };
 
   handleClick2 = () => {
